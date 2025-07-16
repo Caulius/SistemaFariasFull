@@ -193,7 +193,8 @@ const DailySchedule: React.FC<DailyScheduleProps> = ({ schedules, onUpdate, preR
         }
       });
       
-      message += `   📊 Status: ${vehicle.status === 'EM_TRANSITO' ? 'Em Trânsito' : 'Concluído'}\n\n`;
+      // LINHA DO STATUS REMOVIDA AQUI
+      message += `\n`; // Apenas uma linha em branco entre veículos
     });
     
     message += `📈 Total de veículos: ${schedule.vehicles.length}`;
